@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		806C77B317CD7E4F00961A14 /* salmos.sqlitedb in Resources */ = {isa = PBXBuildFile; fileRef = 806C77B217CD7E4F00961A14 /* salmos.sqlitedb */; };
+		806C77B617CD7EBC00961A14 /* SDDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C77B517CD7EBC00961A14 /* SDDObject.m */; };
+		806C77B917CD7ED200961A14 /* SDDVerse.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C77B817CD7ED200961A14 /* SDDVerse.m */; };
+		806C77BC17CD7F8C00961A14 /* SDDDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C77BB17CD7F8C00961A14 /* SDDDatabase.m */; };
+		806C77C017CD7FE300961A14 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 806C77BF17CD7FE300961A14 /* Podfile */; };
 		806E1DEB17CD7CC500DE9493 /* SDDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806E1DEA17CD7CC500DE9493 /* SDDHomeViewController.m */; };
 		80734D1B17CD779C007C5335 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80734D1A17CD779C007C5335 /* UIKit.framework */; };
 		80734D1D17CD779C007C5335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80734D1C17CD779C007C5335 /* Foundation.framework */; };
@@ -25,6 +29,13 @@
 
 /* Begin PBXFileReference section */
 		806C77B217CD7E4F00961A14 /* salmos.sqlitedb */ = {isa = PBXFileReference; lastKnownFileType = file; path = salmos.sqlitedb; sourceTree = "<group>"; };
+		806C77B417CD7EBC00961A14 /* SDDObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDObject.h; sourceTree = "<group>"; };
+		806C77B517CD7EBC00961A14 /* SDDObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDObject.m; sourceTree = "<group>"; };
+		806C77B717CD7ED200961A14 /* SDDVerse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDVerse.h; sourceTree = "<group>"; };
+		806C77B817CD7ED200961A14 /* SDDVerse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDVerse.m; sourceTree = "<group>"; };
+		806C77BA17CD7F8C00961A14 /* SDDDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDDatabase.h; sourceTree = "<group>"; };
+		806C77BB17CD7F8C00961A14 /* SDDDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDDatabase.m; sourceTree = "<group>"; };
+		806C77BF17CD7FE300961A14 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		806E1DE917CD7CC500DE9493 /* SDDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDHomeViewController.h; sourceTree = "<group>"; };
 		806E1DEA17CD7CC500DE9493 /* SDDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDHomeViewController.m; sourceTree = "<group>"; };
 		80734D1717CD779C007C5335 /* Salmo do Dia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salmo do Dia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +104,7 @@
 				80734D1917CD779C007C5335 /* Frameworks */,
 				80734D1817CD779C007C5335 /* Products */,
 				CCFBA9FE7A394A248513BD4B /* Pods-Salmo do Dia.xcconfig */,
+				806C77BF17CD7FE300961A14 /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,7 +130,6 @@
 		80734D2017CD779C007C5335 /* Salmo do Dia */ = {
 			isa = PBXGroup;
 			children = (
-				806C77B017CD7E4F00961A14 /* Resources */,
 				80734D4117CD77D1007C5335 /* Controller */,
 				80734D4017CD77C9007C5335 /* Model */,
 				80734D2917CD779C007C5335 /* SDDAppDelegate.h */,
@@ -126,6 +137,7 @@
 				80734D3217CD779D007C5335 /* MainStoryboard_iPhone.storyboard */,
 				80734D3517CD779D007C5335 /* MainStoryboard_iPad.storyboard */,
 				80734D2117CD779C007C5335 /* Supporting Files */,
+				806C77B017CD7E4F00961A14 /* Resources */,
 			);
 			path = "Salmo do Dia";
 			sourceTree = "<group>";
@@ -164,6 +176,8 @@
 		80734D4217CD77E6007C5335 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				806C77BA17CD7F8C00961A14 /* SDDDatabase.h */,
+				806C77BB17CD7F8C00961A14 /* SDDDatabase.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -171,6 +185,10 @@
 		80734D4317CD7805007C5335 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				806C77B417CD7EBC00961A14 /* SDDObject.h */,
+				806C77B517CD7EBC00961A14 /* SDDObject.m */,
+				806C77B717CD7ED200961A14 /* SDDVerse.h */,
+				806C77B817CD7ED200961A14 /* SDDVerse.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -236,6 +254,7 @@
 				80734D3417CD779D007C5335 /* MainStoryboard_iPhone.storyboard in Resources */,
 				80734D3717CD779D007C5335 /* MainStoryboard_iPad.storyboard in Resources */,
 				806C77B317CD7E4F00961A14 /* salmos.sqlitedb in Resources */,
+				806C77C017CD7FE300961A14 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +301,9 @@
 				80734D2717CD779C007C5335 /* main.m in Sources */,
 				80734D2B17CD779C007C5335 /* SDDAppDelegate.m in Sources */,
 				806E1DEB17CD7CC500DE9493 /* SDDHomeViewController.m in Sources */,
+				806C77B617CD7EBC00961A14 /* SDDObject.m in Sources */,
+				806C77B917CD7ED200961A14 /* SDDVerse.m in Sources */,
+				806C77BC17CD7F8C00961A14 /* SDDDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
